@@ -10,7 +10,7 @@ def find_min_in_nested_arrays(src)
     while element < src[row].length do
       if min == nil
         min = src[row][element]
-      elsif min >  src[row][element]
+      elsif min != nil && min >  src[row][element]
         min = src[row][element]
       end
       element += 1
